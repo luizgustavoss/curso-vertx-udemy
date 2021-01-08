@@ -1,4 +1,4 @@
-package br.com.votti.udemy.vertx_stock_broker;
+package br.com.votti.udemy.broker;
 
 import io.vertx.core.Vertx;
 import io.vertx.junit5.VertxExtension;
