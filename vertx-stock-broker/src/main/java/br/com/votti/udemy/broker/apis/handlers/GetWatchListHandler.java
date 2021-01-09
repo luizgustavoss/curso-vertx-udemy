@@ -1,7 +1,6 @@
 package br.com.votti.udemy.broker.apis.handlers;
 
 import br.com.votti.udemy.broker.apis.WatchListApi;
-import br.com.votti.udemy.broker.model.WatchList;
 import io.netty.handler.codec.http.HttpHeaderValues;
 import io.netty.handler.codec.http.HttpResponseStatus;
 import io.vertx.core.Handler;
@@ -11,7 +10,6 @@ import io.vertx.ext.web.RoutingContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.HashMap;
 import java.util.Optional;
 import java.util.UUID;
 

@@ -9,7 +9,6 @@ import io.vertx.ext.web.RoutingContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.HashMap;
 import java.util.UUID;
 
 public class PutWatchListHandler implements Handler<RoutingContext> {

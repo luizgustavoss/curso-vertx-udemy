@@ -1,6 +1,5 @@
 package br.com.votti.udemy.broker.apis.handlers;
 
-import br.com.votti.udemy.broker.apis.QuotesApi;
 import br.com.votti.udemy.broker.model.Quote;
 import io.netty.handler.codec.http.HttpHeaderValues;
 import io.netty.handler.codec.http.HttpResponseStatus;

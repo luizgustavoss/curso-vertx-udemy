@@ -1,18 +1,18 @@
-package br.com.votti.udemy.broker.model;
+package br.com.votti.udemy.broker.apis.handlers;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import io.vertx.core.json.JsonObject;
-import lombok.Builder;
-import lombok.Value;
+import lombok.Data;
 
 import java.math.BigDecimal;
 
-@Value
-@Builder
-public class Quote {
+@Data
+public class QuoteEntity {
 
-  private Asset asset;
+  private String asset;
   private BigDecimal bid;
   private BigDecimal ask;
+  @JsonProperty("last_price")
   private BigDecimal lastPrice;
   private BigDecimal volume;
 

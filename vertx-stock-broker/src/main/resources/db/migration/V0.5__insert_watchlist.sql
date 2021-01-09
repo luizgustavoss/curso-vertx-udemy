@@ -1,0 +1,16 @@
+insert into watchlist (account_id, asset) values
+('5b17213d-a524-49af-b580-cdcdde3e6f3d', 'NFLX'),
+('5b17213d-a524-49af-b580-cdcdde3e6f3d', 'AAPL'),
+('5b17213d-a524-49af-b580-cdcdde3e6f3d', 'AMZN'),
+('f91c9877-bd70-4f6a-8528-a91f8e3ecdbe', 'FB'),
+('f91c9877-bd70-4f6a-8528-a91f8e3ecdbe', 'GOOG'),
+('d527b72f-eacc-4c3c-927d-8da00213e879', 'TSLA'),
+('d527b72f-eacc-4c3c-927d-8da00213e879', 'MSFT'),
+('d527b72f-eacc-4c3c-927d-8da00213e879', 'NFLX'),
+('fe1e5249-aafb-4342-8e2e-ac9309bb4da8', 'AAPL'),
+('fe1e5249-aafb-4342-8e2e-ac9309bb4da8', 'AMZN'),
+('fe1e5249-aafb-4342-8e2e-ac9309bb4da8', 'FB'),
+('c267fbfd-85e6-4a85-91f3-1749be73c9f6', 'GOOG'),
+('c267fbfd-85e6-4a85-91f3-1749be73c9f6', 'TSLA'),
+('860e055f-e15a-475b-87b7-6a5bf5b37858', 'TSLA'),
+('860e055f-e15a-475b-87b7-6a5bf5b37858', 'MSFT');
