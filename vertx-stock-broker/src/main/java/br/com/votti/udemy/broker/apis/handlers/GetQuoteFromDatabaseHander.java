@@ -44,14 +44,14 @@ public class GetQuoteFromDatabaseHander implements Handler<RoutingContext> {
       .onSuccess(quotes -> {
         if(!quotes.iterator().hasNext()){
           DBErrorHelper.notFoundResponse(context, "quote for asset " + assetParam + " not available!");
-          return;
-        }
-        var response = quotes.iterator().next().toJsonObject();
+        } else {
+          var response = quotes.iterator().next().toJsonObject();
 
-        logger.info("Path {} responds with {} ", context.normalizedPath(), response.encode());
-        context.response()
-          .putHeader(HttpHeaders.CONTENT_TYPE.toString(), HttpHeaderValues.APPLICATION_JSON.toString())
-          .end(response.toBuffer());
+          logger.info("Path {} responds with {} ", context.normalizedPath(), response.encode());
+          context.response()
+            .putHeader(HttpHeaders.CONTENT_TYPE.toString(), HttpHeaderValues.APPLICATION_JSON.toString())
+            .end(response.toBuffer());
+        }
       });
   }
 

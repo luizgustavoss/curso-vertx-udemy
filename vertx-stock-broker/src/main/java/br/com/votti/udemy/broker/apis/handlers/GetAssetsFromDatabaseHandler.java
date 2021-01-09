@@ -27,8 +27,6 @@ public class GetAssetsFromDatabaseHandler implements Handler<RoutingContext> {
 
   @Override
   public void handle(RoutingContext context) {
-
-
     db.query("select a.value from public.assets a")
       .execute()
       .onFailure(error -> {
